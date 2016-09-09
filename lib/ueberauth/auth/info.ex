@@ -8,6 +8,7 @@ defmodule Ueberauth.Auth.Info do
               name: binary | nil,
               first_name: binary | nil,
               last_name: binary | nil,
+              login: binary | nil,
               nickname: binary | nil,
               email: binary | nil,
               location: binary | nil,
@@ -22,6 +23,7 @@ defmodule Ueberauth.Auth.Info do
             nickname: nil, # The username of an authenticating user (such as your @-name from Twitter or GitHub account name)
             email: nil, # The e-mail of the authenticating user. Should be provided if at all possible (but some sites such as Twitter do not provide this information)
             location: nil, # The general location of the user, usually a city and state.
+            login: nil,
             description: nil, # A short description of the authenticating user.
             image: nil, # A URL representing a profile image of the authenticating user. Where possible, should be specified to a square, roughly 50x50 pixel image.
             phone: nil, #  The telephone number of the authenticating user (no formatting is enforced).
